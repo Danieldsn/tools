@@ -48,6 +48,53 @@
       margin-bottom: 20px;
     }
 
+    .legend {
+      background: rgba(15, 23, 42, 0.7);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .legend h3 {
+      margin: 0 0 8px;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .legend p {
+      margin: 0 0 10px;
+      color: #9ca3af;
+      font-size: 13px;
+    }
+
+    .legend table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    .legend-table-wrapper {
+      overflow-x: auto;
+    }
+
+    .legend th,
+    .legend td {
+      padding: 8px 10px;
+      text-align: left;
+      border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+    }
+
+    .legend th {
+      color: #cbd5e1;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .legend td {
+      color: #e5e7eb;
+    }
+
     .questions {
       display: flex;
       flex-direction: column;
@@ -208,6 +255,89 @@
       <div class="subtitle">
         Para cada dimensão, escolha um valor Fibonacci. No final, a média será
         <strong>numérica</strong> (não forçada para Fibonacci).
+      </div>
+
+      <div class="legend" aria-label="Legenda de referência da escala Fibonacci">
+        <h3>Legenda dos Story Points (referência visual)</h3>
+        <p>
+          Resumo da imagem de referência: o significado de cada ponto por
+          dimensão avaliada.
+        </p>
+        <div class="legend-table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>SP</th>
+                <th>Dimensão / Escopo</th>
+                <th>Complexidade Técnica</th>
+                <th>Conhecimento / Incerteza</th>
+                <th>Risco (Obstáculos / dependências)</th>
+                <th>Ação Recomendada</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Mínimo; item de referência (baseline).</td>
+                <td>Muito baixa para uma função familiar.</td>
+                <td>Alto (total familiaridade).</td>
+                <td>Quase nulo / baixo.</td>
+                <td>Usado para calibrar estimativas futuras.</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Muito pequeno, poucas dependências.</td>
+                <td>Baixa, poucas dependências.</td>
+                <td>Razoável.</td>
+                <td>Baixo.</td>
+                <td>Necessário para ajustar baseline.</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>
+                  Pequeno; esforço moderado, com alguma dependência (ex.: login
+                  com validação).
+                </td>
+                <td>Moderada; lógica previsível.</td>
+                <td>Pequenos desconhecidos possíveis.</td>
+                <td>Moderado.</td>
+                <td>Bom para esforço moderado.</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>Médio; esforço significativo.</td>
+                <td>Necessário design que envolve lógica dinâmica.</td>
+                <td>Algumas lacunas de conhecimento.</td>
+                <td>Presente; probabilidade de dependências.</td>
+                <td>Requer boa definição para seguir.</td>
+              </tr>
+              <tr>
+                <td>8</td>
+                <td>Grande; volume considerável de trabalho.</td>
+                <td>Alta; requer coordenação ou lógica crítica.</td>
+                <td>Alta; integra desconhecidos.</td>
+                <td>Risco crítico; indica instabilidade e perda de controle de prazo.</td>
+                <td>Exige maior atenção sobre a saúde do projeto.</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>Muito grande.</td>
+                <td>Compromete sequências de épicos.</td>
+                <td>Alto; incertezas com a equipe.</td>
+                <td>Risco alto; indicativo de refino em ítens menores.</td>
+                <td>Refinamento de histórias em paralelo.</td>
+              </tr>
+              <tr>
+                <td>21</td>
+                <td>Extenso; abrange múltiplos sprints.</td>
+                <td>Enorme complexidade entre equipes.</td>
+                <td>Risco extremo; incertezas distribuídas.</td>
+                <td>Risco extremo; exige equipe experiente e dedicada.</td>
+                <td>Metas estratégicas e esforços longos.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
 
       <div class="questions" id="questions"></div>
