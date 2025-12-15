@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links úteis</title>
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+        color-scheme: light dark;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(circle at top, #e0f2fe, #eff6ff 45%, #f8fafc);
+        color: #0f172a;
+        padding: 24px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+        padding: 32px;
+        border-radius: 16px;
+        width: min(880px, 94vw);
+        backdrop-filter: blur(8px);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+      }
+
+      h2 {
+        margin: 28px 0 12px;
+        font-size: 18px;
+        letter-spacing: -0.01em;
+        color: #111827;
+      }
+
+      p {
+        margin: 0 0 20px;
+        color: #334155;
+        font-size: 15px;
+      }
+
+      .section {
+        display: grid;
+        gap: 10px;
+      }
+
+      .link-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 16px;
+        border-radius: 12px;
+        border: 1px solid rgba(148, 163, 184, 0.4);
+        background: rgba(255, 255, 255, 0.85);
+        transition: transform 0.12s ease, box-shadow 0.12s ease;
+      }
+
+      .link-card:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 10px 28px rgba(15, 23, 42, 0.12);
+      }
+
+      .link-details {
+        display: grid;
+        gap: 4px;
+      }
+
+      .link-title {
+        margin: 0;
+        font-weight: 700;
+        color: #0f172a;
+      }
+
+      .link-hint {
+        margin: 0;
+        color: #475569;
+        font-size: 14px;
+      }
+
+      .link {
+        color: #4f46e5;
+        text-decoration: none;
+        font-weight: 600;
+        word-break: break-word;
+      }
+
+      .back {
+        display: inline-flex;
+        gap: 8px;
+        align-items: center;
+        margin-top: 24px;
+        font-size: 14px;
+        color: #4f46e5;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      @media (max-width: 640px) {
+        .link-card {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Links úteis</h1>
+      <p>Principais painéis e repositórios para acompanhar o trabalho.</p>
+
+      <section class="section">
+        <h2>Dashboards do Amplitude</h2>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">Home</p>
+            <p class="link-hint">Visão geral das métricas principais.</p>
+          </div>
+          <a class="link" href="https://app.amplitude.com/analytics/globoplay/dashboard/ku70jkum?source=copy+url" target="_blank" rel="noreferrer">Abrir</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">Agenda</p>
+            <p class="link-hint">Planejamento e agenda de eventos.</p>
+          </div>
+          <a class="link" href="https://app.amplitude.com/analytics/globoplay/dashboard/nyc1dxfn?source=copy+url" target="_blank" rel="noreferrer">Abrir</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">Meu Time</p>
+            <p class="link-hint">Acompanhamento dedicado do squad.</p>
+          </div>
+          <a class="link" href="https://app.amplitude.com/analytics/globoplay/dashboard/vcaxekw9?source=copy+url" target="_blank" rel="noreferrer">Abrir</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">Central da partida</p>
+            <p class="link-hint">Indicadores da experiência ao vivo.</p>
+          </div>
+          <a class="link" href="https://app.amplitude.com/analytics/globoplay/dashboard/5pzv1qn9?source=copy+url" target="_blank" rel="noreferrer">Abrir</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">Tabelas</p>
+            <p class="link-hint">Análises de tabelas e standings.</p>
+          </div>
+          <a class="link" href="https://app.amplitude.com/analytics/globoplay/dashboard/yxtf5x74?source=copy+url" target="_blank" rel="noreferrer">Abrir</a>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Repositórios</h2>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">premiere-play-android</p>
+            <p class="link-hint">Aplicativo Android principal.</p>
+          </div>
+          <a class="link" href="https://github.com/globoi/premiere-play-android" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">premiere-play-ios</p>
+            <p class="link-hint">Aplicativo iOS principal.</p>
+          </div>
+          <a class="link" href="https://github.com/globoi/premiere-play-ios" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">combate-android</p>
+            <p class="link-hint">Aplicativo Android do Combate.</p>
+          </div>
+          <a class="link" href="https://github.com/globoi/combate-android" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">combate-ios</p>
+            <p class="link-hint">Aplicativo iOS do Combate.</p>
+          </div>
+          <a class="link" href="https://github.com/globoi/combate-ios" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">clube-assinante-android</p>
+            <p class="link-hint">Projeto em migração para premiere-play-android. (VPN)</p>
+          </div>
+          <a class="link" href="https://gitlab.globoi.com/clube-do-assinante-premiere/clube-assinante-android" target="_blank" rel="noreferrer">GitLab</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">globo-auth-ios</p>
+            <p class="link-hint">SDK de autenticação para iOS.</p>
+          </div>
+          <a class="link" href="https://github.com/globoi/globo-auth-ios" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">globo-auth-android</p>
+            <p class="link-hint">SDK de autenticação para Android.</p>
+          </div>
+          <a class="link" href="https://github.com/globoi/globo-auth-android" target="_blank" rel="noreferrer">GitHub</a>
+        </article>
+        <article class="link-card">
+          <div class="link-details">
+            <p class="link-title">premiere-api</p>
+            <p class="link-hint">API de produtos de esportes. (VPN)</p>
+          </div>
+          <a class="link" href="https://gitlab.globoi.com/produtos-videos-esportes/premiere-api" target="_blank" rel="noreferrer">GitLab</a>
+        </article>
+      </section>
+
+      <a class="back" href="../">← Voltar</a>
+    </main>
+  </body>
+</html>
